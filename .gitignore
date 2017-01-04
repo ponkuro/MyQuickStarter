@@ -15,3 +15,43 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Recommended settings for Rails by GitHub.
+# https://github.com/github/gitignore/blob/master/Rails.gitignore
+
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+
+# dotenv
+.env
+
+# Environment normalization:
+/vendor/bundle
+.ruby-version
+.ruby-gemset
+.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
+
+# Ignore pow environment settings
+.powenv
+
+# OSX
+.DS_Store
