@@ -7,6 +7,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super
   end
 
+  # 更新時のパスワード判定を回避する
+  def update_resource(resource, params)
+    resource.update_without_password(params)
+  end
+
   protected
 
   # If you have extra params to permit, append them to the sanitizer.
